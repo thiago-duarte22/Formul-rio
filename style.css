@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Design\ sem\ nome\ \(1\).png) no-repeat center center fixed;
+    background-size: cover;
+
+}
+.container{ 
+    max-width: 50rem;
+    width: 100%;
+    background-color: white;
+    color: rgb(19, 127, 154);
+    padding: 2rem 2rem;
+    font-size: 17px;
+    /* efeito vidro----------------------- */
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* ------------------------- */
+}
+.container .titulo{
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(17, 184, 226)
+}
+.container form .pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .pai .filho{
+    margin: 20px 0 12px 0;
+    width: calc(100% /2 - 20px);
+}
+
+.pai .filho label{
+    font-weight:500;
+    display: block;
+    margin:5px;
+}
+
+form .pai .filho input{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-bottom-width: 2px;
+    outline: none;
+}
+form .pai .filho input:focus,
+form .pai .filho input:valid{
+    border-color: rgb(114, 114, 117);
+}
+.opcao .genero{
+display: flex;   
+position:absolute;
+top: -50px;
+gap:30px;
+   
+    
+}
+.opcao{
+    position: relative;
+    display:flex;
+    width:90%;
+    justify-content:end;
+    
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+button{
+    width:50%;
+    height: 40px; 
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+.botao button {background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%)}
+.botao button{
+   margin: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 20px;
+   display: block;
+   font-size: 20px;
+   font-weight: 500;
+   border-color:bisque;
+ }
+
+ .botao button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ label{
+    margin-left: 1rem;
+}
+
+@media(max-width:600px){
+.opcao{
+       display:block;
+       left: -12px;
+    }
+.opcao .genero{
+    position:initial;
+    
+}
+}
+
+span{
+    position: relative;
+    left: 8px;
+
+}
+input:invalid + span::before{
+    content:"✖";
+    color: red;
+}
+
+input:valid + span::before{
+    content:"✓";
+    color: rgb(19, 127, 154);}
+
+input + span::before{
+    position:absolute;
+    
+} 

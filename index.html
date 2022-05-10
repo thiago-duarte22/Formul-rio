@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo">Cadastro </div>
+        <form  method="get" action="index.html">
+            <div class="pai">
+                    
+                <div class= "filho">
+                    <label for="nome"> Nome</label>
+                    <input type="tex" nome="nome" id="nome" placeholder="Nome" required maxlength="30" minlength="4" >
+                    <span></span> 
+                    </div>
+                    
+                <div class= "filho">
+                    
+                    <label for="Sobrenome"> Sobrenome</label>
+                    <input type="tex" nome="sobrenome" id="sobrenome" placeholder="Sobrenome" required maxlength="20">
+                    <span></span>
+                                        
+                </div>    
+                        
+                <div class= "filho">
+                    <label for="celular"> Celular</label>
+                    <input type="tel" nome="celular" id="celular" placeholder="( )número" required maxlength="13" minlength="13">
+                    <span></span>
+                </div>    
+                    
+                <div class= "filho">
+                    <label for=" email"> Email</label>
+                    <input type="email" nome="email" id="email" placeholder="email" required maxlength="30"> 
+                    <span></span>
+                </div>
+
+                        
+                <div class= "filho">
+                    <label for="senha"> Sua Senha</label>
+                    <input type="password" nome="senha" id="senha" placeholder="Senha" required minlength="6"> 
+                    <span></span>
+                </div>    
+                     
+                 <div class= "filho">
+                     <label for="senha"> Confirme Senha</label>
+                     <input type="password" nome="senha"  placeholder="Senha" required minlength="6"> 
+                    <span></span>
+                </div>
+                        
+                 <div class= "filho">
+                    <label for="Data de Nascimento">Ano de nascimento</label> 
+                    <input type="date" name="dataNascimento" 
+                    id="dataNascimento" required> 
+                    
+                </div>
+   
+            </div>  
+           
+           
+            <div class="opcao">
+                <div class="genero">
+                    <div class="feminino">
+                        <label for="feminino"><for="feminino">Feminino</label>
+                        <input type="radio" name="gênero" id="feminino" value="feminino" required>
+                    </div>
+
+                    <div class="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="gênero" id="masculino" value="masculino" required>
+                    </div>
+                </div>
+            </div>         
+            <div class= "botao">
+                <button> enviar</button>
+            
+            </div>
+
+        </form>    
+        
+    
+    </div>                  
+
+
+
+    
+</body>
+
+</html>
